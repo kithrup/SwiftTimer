@@ -19,9 +19,9 @@ struct TimerView: View {
     }
     var body: some View {
         HStack {
-            Text("Counter")
+            Text("Rate \(self.timerModel.rate)")
             Spacer()
-            Text("\(self.timerModel.counter)")
+            Text("Counter \(self.timerModel.counter)")
         }
     }
 }
