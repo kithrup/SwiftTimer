@@ -15,3 +15,16 @@ class TimerViewModel : ObservableObject, Identifiable {
         timer = TimerModel()
     }
 }
+
+class TimerListViewModel : ObservableObject, Identifiable {
+    @Published var timers : [TimerModel] = []
+    
+    init(_ intervals : [Double] = [1.0]) {
+        for i in intervals {
+            timers.append(TimerModel(i))
+        }
+    }
+    var count : Int {
+        return self.timers.count
+    }
+}

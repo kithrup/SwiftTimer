@@ -12,9 +12,10 @@ import Foundation
  * A simple class to implement a timer, and then increment a variable.
  */
 
-class TimerModel : ObservableObject {
+class TimerModel : ObservableObject, Identifiable {
     @Published private(set) var counter = 0
-    var timer = Timer()
+    private(set) var timer = Timer()
+    let id = UUID()
     
     init(_ interval : Double = 1.0) {
         timer = Timer(timeInterval: interval, repeats: true) { t in
