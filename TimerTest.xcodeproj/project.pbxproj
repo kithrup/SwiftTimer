@@ -12,6 +12,9 @@
 		86CE387424B795D400604848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE387324B795D400604848 /* Assets.xcassets */; };
 		86CE387724B795D400604848 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86CE387624B795D400604848 /* Preview Assets.xcassets */; };
 		86CE387A24B795D400604848 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86CE387824B795D400604848 /* Main.storyboard */; };
+		86CE388324B795E000604848 /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE388224B795E000604848 /* TimerModel.swift */; };
+		86CE388524B797ED00604848 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE388424B797ED00604848 /* TimerViewModel.swift */; };
+		86CE388724B79AD600604848 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE388624B79AD600604848 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		86CE387924B795D400604848 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86CE387B24B795D400604848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		86CE387C24B795D400604848 /* TimerTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimerTest.entitlements; sourceTree = "<group>"; };
+		86CE388224B795E000604848 /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		86CE388424B797ED00604848 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		86CE388624B79AD600604848 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 		86CE386324B795D300604848 = {
 			isa = PBXGroup;
 			children = (
+				86CE388224B795E000604848 /* TimerModel.swift */,
 				86CE386E24B795D300604848 /* TimerTest */,
 				86CE386D24B795D300604848 /* Products */,
 			);
@@ -56,6 +63,8 @@
 			isa = PBXGroup;
 			children = (
 				86CE386F24B795D300604848 /* AppDelegate.swift */,
+				86CE388424B797ED00604848 /* TimerViewModel.swift */,
+				86CE388624B79AD600604848 /* TimerView.swift */,
 				86CE387124B795D300604848 /* ContentView.swift */,
 				86CE387324B795D400604848 /* Assets.xcassets */,
 				86CE387824B795D400604848 /* Main.storyboard */,
@@ -145,6 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CE388724B79AD600604848 /* TimerView.swift in Sources */,
+				86CE388524B797ED00604848 /* TimerViewModel.swift in Sources */,
+				86CE388324B795E000604848 /* TimerModel.swift in Sources */,
 				86CE387224B795D300604848 /* ContentView.swift in Sources */,
 				86CE387024B795D300604848 /* AppDelegate.swift in Sources */,
 			);
