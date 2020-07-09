@@ -16,8 +16,8 @@ class TimerModel : ObservableObject {
     @Published private(set) var counter = 0
     var timer = Timer()
     
-    init() {
-        timer = Timer(timeInterval: 1.0, repeats: true) { t in
+    init(_ interval : Double = 1.0) {
+        timer = Timer(timeInterval: interval, repeats: true) { t in
             self.counter += 1
             print("Set counter to \(self.counter)")
         }

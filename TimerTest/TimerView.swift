@@ -11,8 +11,8 @@ import SwiftUI
 struct TimerView: View {
     @ObservedObject var timerModel : TimerModel
     
-    init() {
-        self.timerModel = TimerModel()
+    init(_ interval : Double = 1.0) {
+        self.timerModel = TimerModel(interval)
     }
     init(viewModel: TimerModel) {
         self.timerModel = viewModel

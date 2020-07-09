@@ -10,8 +10,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TimerView(viewModel: TimerModel())
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack {
+            HStack {
+                Text("One second interval")
+                Spacer()
+                TimerView(viewModel: TimerModel(1.0))
+            }
+            HStack {
+                Text("Two second interval")
+                Spacer()
+                TimerView(viewModel : TimerModel(2.0))
+            }
+            HStack {
+                Text("Half second interval")
+                Spacer()
+                TimerView(viewModel : TimerModel(0.5))
+            }
+            HStack {
+                Text("Quarter second interval")
+                Spacer()
+                TimerView(viewModel : TimerModel(0.25))
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
